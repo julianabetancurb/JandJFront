@@ -26,7 +26,7 @@ def get_usuarios():
 @app.route('/')
 def index():
     usuarios = get_usuarios()
-    print(usuarios)  # <- Agrega esta línea para ver qué devuelve
+    print(usuarios) 
     return render_template('index.html', usuarios=usuarios)
 
 if __name__ == '__main__':
